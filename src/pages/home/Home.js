@@ -198,7 +198,7 @@ const Home = () => {
         <Navbar/>
 
 
-        <div className=' mb-12  mt-12 border-white rounded-md  p-5 w-[50%] md:w-[35%] border  mx-auto h-auto' style={{marginTop:70,paddingTop:40, maxWidth:500
+        <div className=' mb-12  mt-12 border-white rounded-md  p-5 w-[85%] md:w-[35%] border  mx-auto h-auto' style={{marginTop:70,paddingTop:40, maxWidth:500
          }} >
 
 

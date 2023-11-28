@@ -1,4 +1,4 @@
-export const cont_add="0xDDeF174677D542f8878e4deCf1Fbe6Dc975a3346";
+export const cont_add="0x69A4FFb98BD526B5756220e913F031880f84bD7B";
 
 export const cont_abi=[
 	{
@@ -147,12 +147,12 @@ export const cont_abi=[
 	{
 		"inputs": [
 			{
-				"internalType": "address[]",
-				"name": "_users",
-				"type": "address[]"
+				"internalType": "uint256",
+				"name": "_value",
+				"type": "uint256"
 			}
 		],
-		"name": "addWhitelistUsers",
+		"name": "Set_presale_supply",
 		"outputs": [],
 		"stateMutability": "nonpayable",
 		"type": "function"
@@ -419,6 +419,19 @@ export const cont_abi=[
 	},
 	{
 		"inputs": [],
+		"name": "presaleSupply",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
 		"name": "presale_time",
 		"outputs": [
 			{
@@ -431,23 +444,23 @@ export const cont_abi=[
 		"type": "function"
 	},
 	{
-		"inputs": [
-			{
-				"internalType": "address[]",
-				"name": "_users",
-				"type": "address[]"
-			}
-		],
-		"name": "removeWhitelistUsers",
+		"inputs": [],
+		"name": "renounceOwnership",
 		"outputs": [],
 		"stateMutability": "nonpayable",
 		"type": "function"
 	},
 	{
 		"inputs": [],
-		"name": "renounceOwnership",
-		"outputs": [],
-		"stateMutability": "nonpayable",
+		"name": "revealed",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
 		"type": "function"
 	},
 	{
@@ -748,38 +761,6 @@ export const cont_abi=[
 				"internalType": "uint256[]",
 				"name": "",
 				"type": "uint256[]"
-			}
-		],
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"inputs": [],
-		"name": "whiteistCost",
-		"outputs": [
-			{
-				"internalType": "uint256",
-				"name": "",
-				"type": "uint256"
-			}
-		],
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "address",
-				"name": "",
-				"type": "address"
-			}
-		],
-		"name": "whitelisted",
-		"outputs": [
-			{
-				"internalType": "bool",
-				"name": "",
-				"type": "bool"
 			}
 		],
 		"stateMutability": "view",
