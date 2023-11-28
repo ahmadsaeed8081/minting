@@ -200,8 +200,11 @@ const Home = () => {
 
         <div className=' mb-12  mt-12 border-white rounded-md  p-5 w-[85%] md:w-[35%] border  mx-auto h-auto' style={{marginTop:70,paddingTop:40, maxWidth:500
          }} >
+{curr_time<  presaleTime?(
 
 
+
+            <>
            <div className=' text-center  ' >
            <h2 className=' text-white text-xl  sm:text-3xl'>LIMITED TIME PRE-SALE</h2>
            </div>
@@ -224,6 +227,12 @@ const Home = () => {
                     <span className=' text-white'>Seconds</span>
                 </div>
             </div>
+            </>
+):(
+  <div className=' text-center  ' >
+  <h2 className=' text-white text-xl  sm:text-3xl'>Public Sale </h2>
+  </div>
+)} 
 
 
             <div className=' my-4 flex justify-between items-center border border-white rounded-md p-3'>
@@ -244,7 +253,7 @@ const Home = () => {
                 </div>
                 <div>
                     
-                    <p className=' text-white'>{supply} minuted out of {maxSupply}</p>
+                    <p className=' text-white'>{supply} minted out of {maxSupply}</p>
                 </div>
             </div>
 
